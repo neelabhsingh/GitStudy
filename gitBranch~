@@ -1,0 +1,20 @@
+I created file testGit.text and then commit and push on github, Now github has file testGit.text.
+
+
+1. git checkout -b neelabh_branch  => This will create new branch name neelabh_branch and switch to new branch.
+
+2. git branch
+  master
+* neelabh_branch
+Now on local repository we have two branch but on github we have onle one branch master.
+
+3. Create file newFile.txt, under branch neelabh_branch, and commit then push to github.
+But you will get message: Everything up-to-date, and GitHub only shows one file testGit.txt, which was pushed from origin. But on local repository will show two files 1. testGit.txt, 2. newFile.txt
+
+3. Push the branch on github : 
+git push origin neelabh_branch
+
+Now on github you can see two branch master and neelabh_branch. 
+
+4.Add a new remote for your branch :
+git remote add master https://github.com/neelabhsingh/GitStudy
